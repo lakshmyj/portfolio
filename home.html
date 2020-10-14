@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics START-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141255160-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-141255160-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics END-->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Lakshmy's Portfolio</title>
+  <link rel="shortcut icon" href="resources/MyLogo_small.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/site.css?v=1.1">
+  <link rel="stylesheet" href="css/homeStyle.css?v=1.1">
+  <link rel="stylesheet" href="css/animation.css?v=1.1">
+</head>
+<body>
+  <nav id="mainNav">
+    <ul>
+    <li><a href="#home"><i class="material-icons md-36">home</i><p>Home</p></a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn"><i class="material-icons md-36">image</i><p>Projects</p></a>
+    <div class="dropdown-content">
+      <a href="pizzeriaProject.html">Pizzeria UX Re-Design</a>
+      <a href="ninjaFolioProject.html">Portfolio UX Design</a>
+      <a href="utProject.html">Usability Testing</a>
+      <a href="amazonProject.html">Amazon.com Casestudy</a>
+      <a href="elderCareProject.html">UX in Elder Care Support System</a>
+      <a href="dataAnalysisProject.html">UX Measurement in Online Banking</a>
+    </div>
+    </li>
+    <li><a href="aboutMe.html"><i class="material-icons md-36">person</i><p>About</p></a></li>
+    <li><a href="#contact_division"><i class="material-icons md-36">mail</i><p>Contact</p></a></li>
+  </ul>
+  </nav>
+
+  <div id="MobPageTitle">
+    <img class="BGTitle4Mob" style="z-index:1;" src="resources/home/mobhomeHero.jpg" alt="Mobile Page Title BG">
+    <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+    <h3 class="PageTitle4Mob">Lakshmy Jayalakshmy</h3>
+  </div>
+  <div id="modalMenuDiv" class="modalMenuBG" style="display:none;">
+    <nav id="mobNav">
+      <a href="#home" onclick="hideMenu()">Home</a>
+      <a href="#projects_division" onclick="hideMenu()">
+        Projects
+        &nbsp;<i class="fa fa-caret-down" style="font-size:16px;color:white;"></i>
+      </a>
+      <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Pizzeria Redesign</a>
+      <a href="ninjaFolioProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Portfolio Design</a>
+      <a href="utProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Usability Testing</a>
+      <a href="amazonProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;UX Case Study</a>
+      <a href="elderCareProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;User & Task Analysis</a>
+      <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;UX Measurement</a>
+      <a href="aboutMe.html" onclick="hideMenu()">About</a>
+      <a href="#contact_division" onclick="hideMenu()">Contact</a>
+    </nav>
+  </div>
+
+  <header id="home">
+    <div class="homeContainer">
+      <img id="myNameimg" src="resources/home/myName.png">
+      <div class="bestAt">
+        <h3 id="bestAtWeb"><i>UX Designer || UI Developer</i></h3>
+        <div id="bestAtMobile">
+          <h3><i>UX Designer <br> UI Developer</i></h3>
+        </div>
+        <p id="motto">Experience Design that Humanize Technology</p>
+        <p>Recently certified in <i>User Experience and Design</i> from Bentley University in the states, I thrive on identifying and implementing practical solutions for complex time-bound problems in the UI/UX space by employing techniques ranging from research to wireframing, rapid prototyping and testing.</p>
+          <button class="viewResumeButton" onclick="ga('send', 'event', { eventCategory: 'ResumeView', eventAction: 'ResumeButtonClick',eventValue: 1});">
+            <a href="resources/Lakshmy_Resume_2019_v1.pdf" target="_blank" style="color:white;"> View Resume </a>
+          </button>
+      </div>
+  </div>
+</header>
+
+<!-- The Modal -->
+<div id="modalBox" class="modal">
+  <div>
+    <input type="button" class="close zoomButton" value="&times">
+  </div>
+  <div id="modalImageContainer">
+    <img id="modalImage" class="modal-content">
+  </div>
+  <div style="text-align:center;">
+    <input type="button" id="zoomin" class="zoomButton" value="+"/>
+    <input type="button" id="zoomout" class="zoomButton" value="-"/>
+  </div>
+</div>
+
+<section class="projects_division" id="projects_division">
+  <h2>Projects</h2>
+  <div class="projectsSuperContainer">
+  <div class="pjtContainer">
+    <div class="projectTile">
+      <!--<iframe width="100%" height="315"  autoplay loop muted preload="metadata" poster="resources/home/pizzeria.png" src="https://youtu.be/nQXzTuXwn_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+      <video width="100%" autoplay loop muted preload="metadata" poster="resources/home/pizzeria.png" src="resources/home/pizzeria2.mp4" type="video/mp4"></video>
+    </div>
+    <div class="pjtdesc">
+      <h3>Pizzeria UX Re-design</h3>
+      <p>A full-fledged UX project on re-designing a pizzeria website to make it usable so as to enable easier and faster order placement</p>
+      <p></p>
+      <a href="pizzeriaProject.html">
+        <button class="caseStudyButton">View More</button>
+      </a>
+    </div>
+  </div>
+  <div class="pjtContainer">
+    <div class="projectTile" style="float:right;">
+      <img src="resources/home/uxninja.png" alt="portfolio logo">
+    </div>
+    <div class="projectTile pjtdesc" style="float:left;">
+      <h3>Portfolio - UX Design & UI Development</h3>
+      <p>End-to-end UX design, UI design, front-end development, testing and deployment of this responsive online portfolio </p>
+      <p></p>
+      <a href="ninjaFolioProject.html">
+        <button class="caseStudyButton">View More</button>
+      </a>
+    </div>
+  </div>
+  <div class="pjtContainer">
+    <div class="projectTile">
+      <!--<img src="resources/home/bentleyUniversity.jpg" alt="bentley university">-->
+      <video width="100%" autoplay loop muted preload="metadata" poster="resources/home/bentleyUniversity.jpg" src="resources/home/utesting1.mp4" type="video/mp4"></video>
+      <!--<iframe width="100%" height="315"  autoplay loop muted preload="metadata" poster="resources/home/pizzeria.png" src="https://youtu.be/NYERJoSSFd4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+    </div>
+    <div class="projectTile pjtdesc">
+      <h3>Usability Testing on Bentley.edu</h3>
+      <p>Identifying user research proposal and conducting usability test on the Bentley University's official website creating test report</p>
+      <p></p>
+      <a href="utProject.html">
+        <button class="caseStudyButton">View More</button>
+      </a>
+    </div>
+  </div>
+  <div class="pjtContainer">
+    <div class="projectTile" style="float:right;">
+      <img src="resources/home/amazonCS.png" alt="amazon logo">
+    </div>
+    <div class="projectTile pjtdesc" style="float:left;">
+      <h3>UX Case Study on Amazon.com</h3>
+      <p>Analyzing <i>amazon.com</i> for its compatibility with human factors considerations and user engagement measurement techniques</p>
+      <p></p>
+      <a href="amazonProject.html">
+        <button class="caseStudyButton">View More</button>
+      </a>
+    </div>
+  </div>
+  <div class="pjtContainer">
+    <div class="projectTile">
+      <img src="resources/home/eldercare.jpg" alt="elder care support logo">
+    </div>
+    <div class="projectTile pjtdesc">
+      <h3>UX in Elder Care Support System</h3>
+      <p>Performing user and task analysis including persona definition and feature prioritization for an elder care support system</p>
+      <p></p>
+      <a href="elderCareProject.html">
+        <button class="caseStudyButton">View More</button>
+      </a>
+    </div>
+  </div>
+  <div class="pjtContainer">
+    <div class="projectTile" style="float:right;">
+      <!--<img src="resources/home/BankLogo.jpg" alt="BOA Wells Fargo Logo">-->
+      <video width="100%" autoplay loop muted preload="metadata" poster="resources/measuringUX/BankLogo.jpg" src="resources/home/measuringux.mp4" type="video/mp4"></video>
+    </div>
+    <div class="projectTile pjtdesc" style="float:left;">
+      <h3>UX Measurement in Online Banking</h3>
+      <p>Quantitative analysis of twinned usability test result data sets of Bank of America and Wells Fargo to measure the user experience</p>
+      <p></p>
+      <a href="dataAnalysisProject.html">
+        <button class="caseStudyButton">View More</button>
+      </a>
+    </div>
+  </div>
+    </div>
+  </section>
+
+  <div id="testiSubDiv">
+    <div id="testiImage">
+        <img src="resources/home/testimonials.png" alt="Testimonials Picture">
+    </div>
+    <div id="testiContent">
+      <h2>Nice things people say about me...</h2>
+      <div>
+        <p>
+          <i>"Your design is well thought out, complete and well executed. You've done a great job - the survey is wonderful - understanding and anticipating the user's needs in this context"</i>
+          <br>
+          <span class="textToClick" onclick="openRefLetterModal('home/greggTestimonial.png'); ga('send', 'event', { eventCategory: 'ReferenceLetter', eventAction: 'RefButtonClick', eventValue: 1});">
+            view citation
+          </span>
+          <img class="displayImg" src="resources/home/greggTestimonial.png" alt="reference letter">
+          <br>- Gregg Almquist
+          <br>&nbsp;&nbsp;&nbsp;<i>Lecturer at Bentley University</i>
+          <br>&nbsp;&nbsp;&nbsp;<i>Principal of eXperient Interactive Boston</i>
+        </p>
+      </div>
+      <div>
+        <p>
+          <i>"Lakshmy has talents that span across multiple disciplines. It is rare to find someone who understands UX and human interaction experience as well as technology. Lakshmy not only understands the UX design process but can code. Incredible! Her personality is approachable and she is very reliable. She would be a huge asset to any organization, and they would be lucky to have her."</i>
+          <br>
+          <br>- Jennifer Smith
+          <br>&nbsp;&nbsp;&nbsp;<i>Vice President, branding and UX Design</i>
+          <br>&nbsp;&nbsp;&nbsp;<i>American Graphics Institute, Boston Area</i>
+        </p>
+      </div>
+      <div>
+        <p>
+          <i>"She has the capability to complete assigned tasks with minimum guidance that makes her intellectually independent. This student is highly disciplined, sincere and has pleasing manners. "</i>
+          <br>
+          <span class="textToClick" onclick="openRefLetterModal('home/ShahilaRecommendationLetter.jpg'); ga('send', 'event', { eventCategory: 'ReferenceLetter', eventAction: 'RefButtonClick', eventValue: 1});">
+            view reference letter
+          </span>
+          <img class="displayImg" src="resources/home/ShahilaRecommendationLetter.jpg" alt="reference letter">
+          <br>- Shahila Hameed
+          <br>&nbsp;&nbsp;&nbsp;<i>Lecturer, Dept of Computer Science and IT</i>
+          <br>&nbsp;&nbsp;&nbsp;<i>MACE, Kerala University</i>
+        </p>
+      </div>
+      <div>
+        <p>
+          <i>"She has a good logical ability and tries to solve problems efficiently. I have found her ideas to be innovative and creative. She is inquisitive in learning more about anything and everything."</i>
+          <br>
+          <span class="textToClick" onclick="openRefLetterModal('home/LekshmiRecommendationLetter.jpg'); ga('send', 'event', { eventCategory: 'ReferenceLetter', eventAction: 'RefButtonClick', eventValue: 1});">
+            view reference letter
+          </span>
+          <img class="displayImg" src="resources/home/LekshmiRecommendationLetter.jpg" alt="reference letter">
+          <br>- Lekshmi RJ
+          <br>&nbsp;&nbsp;&nbsp;<i>Lecturer, Dept of Computer Science and IT</i>
+          <br>&nbsp;&nbsp;&nbsp;<i>MACE, Kerala University</i>
+        </p>
+      </div>
+      <div>
+        <p>
+          <i>"Her sound knowledge of fundamentals, a remarkable ability to apply theory to practical situation and a high motivation to keep abreast with the latest information help her in the field she is pursuing. "</i>
+          <br>
+          <span class="textToClick" onclick="openRefLetterModal('home/AbishtaRecommendationLetter.jpg'); ga('send', 'event', { eventCategory: 'ReferenceLetter', eventAction: 'RefButtonClick', eventValue: 1});">
+            view reference letter
+          </span>
+          <img class="displayImg" src="resources/home/AbishtaRecommendationLetter.jpg" alt="reference letter">
+          <br>- Abhishta KS
+          <br>&nbsp;&nbsp;&nbsp;<i>Asst. Professor, Dept of Computer Science and IT</i>
+          <br>&nbsp;&nbsp;&nbsp;<i>MACE, Kerala University</i>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="testiContent4Mob">
+    <h2>Nice things people say about me...</h2>
+    <div>
+      <p>
+        <i>"Your design is well thought out, complete and well executed. You've done a great job - the survey is wonderful - understanding and anticipating the user's needs in this context"</i>
+        <br>
+        <span class="textToClick" onclick="openRefLetterModal('home/greggTestimonial.png'); ga('send', 'event', { eventCategory: 'ReferenceLetter', eventAction: 'RefButtonClick', eventValue: 1});">
+          view citation
+        </span>
+        <img class="displayImg" src="resources/home/greggTestimonial.png" alt="reference letter">
+        <br>- Gregg Almquist
+        <br><i>Lecturer at Bentley University, Principal of eXperient Interactive Boston</i>
+      </p>
+    </div>
+    <div>
+      <p>
+        <i>"Lakshmy has talents that span across multiple disciplines. It is rare to find someone who understands UX and human interaction experience as well as technology. Lakshmy not only understands the UX design process but can code. Incredible! Her personality is approachable and she is very reliable. She would be a huge asset to any organization, and they would be lucky to have her."</i>
+        <br>- Jennifer Smith
+        <br><i>Vice President, branding and UX Design, American Graphics Institute, Boston Area</i>
+      </p>
+    </div>
+    <div>
+      <p>
+        <i>"She has the capability to complete assigned tasks with minimum guidance that makes her intellectually independent. This student is highly disciplined, sincere and has pleasing manners. "</i>
+        <br>
+        <span class="textToClick" onclick="openRefLetterModal('home/ShahilaRecommendationLetter.jpg'); ga('send', 'event', { eventCategory: 'ReferenceLetter', eventAction: 'RefButtonClick', eventValue: 1});">
+          view reference letter
+        </span>
+        <img class="displayImg" src="resources/home/ShahilaRecommendationLetter.jpg" alt="reference letter">
+        <br>- Shahila Hameed
+        <br><i>Lecturer, Dept of Computer Science, MACE, Kerala University</i>
+      </p>
+    </div>
+    <div>
+      <p>
+        <i>"She has a good logical ability and tries to solve problems efficiently. I have found her ideas to be innovative and creative. She is inquisitive in learning more about anything and everything."</i>
+        <br>
+        <span class="textToClick" onclick="openRefLetterModal('home/LekshmiRecommendationLetter.jpg'); ga('send', 'event', { eventCategory: 'ReferenceLetter', eventAction: 'RefButtonClick', eventValue: 1});">
+          view reference letter
+        </span>
+        <img class="displayImg" src="resources/home/LekshmiRecommendationLetter.jpg" alt="reference letter">
+        <br>- Lekshmi RJ
+        <br><i>Lecturer, Dept of Computer Science, MACE, Kerala University</i>
+      </p>
+    </div>
+    <div>
+      <p>
+        <i>"Her sound knowledge of fundamentals, a remarkable ability to apply theory to practical situation and a high motivation to keep abreast with the latest information help her in the field she is pursuing. "</i>
+        <br>
+        <span class="textToClick" onclick="openRefLetterModal('home/AbishtaRecommendationLetter.jpg'); ga('send', 'event', { eventCategory: 'ReferenceLetter', eventAction: 'RefButtonClick', eventValue: 1});">
+          view reference letter
+        </span>
+        <img class="displayImg" src="resources/home/AbishtaRecommendationLetter.jpg" alt="reference letter">
+        <br>- Abhishta KS
+        <br><i>Asst. Professor, Dept of Computer Science, MACE, Kerala University</i>
+      </p>
+    </div>
+  </div>
+
+  <section class="contact_division" id="contact_division">
+    <h2>Contact</h2>
+    <section class="contactContainer">
+      <div class="contactTile">
+        <i class="fa fa-phone" style="font-size:36px;color:#190654;padding:1em;padding:1rem;"></i>
+        <p> Call / Text me at </p>
+        <p class="contactText">+91 - 9447798939</p>
+        <p class="contactText">+1 - 8579300200</p>
+      </div>
+      <div class="contactTile">
+        <!-- <a href="mailto:lakshmyj@gmail.com" target="_blank"> -->
+        <i class="material-icons md-36" style="color:#190654;padding:1em;padding:1rem;">mail</i>
+        <!-- </a> -->
+        <p> Drop a mail at </p>
+        <p class="contactText"><i><u>lakshmyj@gmail.com</u></i></p>
+      </div>
+      <div class="contactTile">
+        <a href="https://www.linkedin.com/in/lakshmy-jayalakshmy-97aa1554" target="_blank">
+          <i class="fa fa-linkedin-square" style="font-size:36px;color:#190654;padding:1em;padding:1rem;"></i>
+        </a>
+        <p> Connect with me on linkedIn </p>
+        <p class="contactText">Lakshmy Jayalakshmy</p>
+      </div>
+    </section>
+
+<footer style="background-color:#E0F7FA;">
+  <div class="bottom-bar" >
+    <p style="text-align:center;line-height:1.5em;line-height:1.5rem;">&copy 2019 | All right reserved.</p>
+    <p style="text-align:center;line-height:1.5em;line-height:1.5rem;">Hand coded and compiled by Lakshmy Jayalakshmy</p>
+    <!-- <p style="text-align:center;line-height:1.5rem;">Please use Google Chrome or Mozilla Firefox for optimized views</p> -->
+  </div>
+</footer>
+</section>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/commonScript.js"></script>
+<script src="js/accordionScript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script>
+/*parallaxScript.js*/
+
+/*Parallax START*/
+function splitScroll(){
+  const controller = new ScrollMagic.Controller();
+  new ScrollMagic.Scene({
+    duration: '200%',
+    triggerElement:'#testiImage',
+    triggerHook: 0
+  })
+  .setPin('#testiImage')
+  .addTo(controller);
+}
+/*Accordion END*/
+splitScroll();
+
+
+/*window.addEventListener("scroll", function() {showFunction()});
+
+function showFunction() {
+  var homeSectionHeight= document.getElementById('home').scrollHeight;
+  var projectSectionHeight= document.getElementById('projects_division').scrollHeight;
+  var aboutSectionHeight= document.getElementById('about_division').scrollHeight;
+  var contactSectionHeight= document.getElementById('contact_division').scrollHeight;
+  if (document.body.scrollTop < homeSectionHeight || document.documentElement.scrollTop < homeSectionHeight) {
+    setSelectedTab('home');
+  }
+  if (document.body.scrollTop >= homeSectionHeight || document.documentElement.scrollTop >= homeSectionHeight) {
+    setSelectedTab('projects');
+  }
+  if (document.body.scrollTop >= (homeSectionHeight+projectSectionHeight) ||
+  document.documentElement.scrollTop >= (homeSectionHeight+projectSectionHeight)) {
+    setSelectedTab('about');
+  }
+  if (window.scrollY + window.innerHeight >= document.body.scrollHeight ||
+    window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+      setSelectedTab('contact');
+    }
+  }
+  // function fixBG(){
+  //   header.style.position = "fixed";
+  //   header.style.overflow = "hidden";
+  //   body.style.position = "fixed";
+  //   body.style.overflow = "hidden";
+  // }
+  /*mobile Navigation START*/
+  // var modal = document.getElementById("modalMenuDiv");
+  // var btn = document.getElementById("hamburgerBtn");
+  // btn.onclick = function() {
+  //   modal.style.display = "block";
+  // }
+  // window.onclick = function(event) {
+  //   if (event.target == modal) {
+  //     modal.style.display = "none";
+  //   }
+  // }
+  /*mobile Navigation END*/
+
+
+  </script>
+</body>
+</html>

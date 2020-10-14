@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics START-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141255160-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-141255160-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics END-->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me Page</title>
+<link rel="shortcut icon" href="resources/MyLogo_small.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/site.css?v=1.1">
+<!--<link rel="stylesheet" href="css/projectsCommon.css?v=1.1">
+<link rel="stylesheet" href="css/homeStyle.css?v=1.1">-->
+<link rel="stylesheet" href="css/aboutMe.css?v=1.1">
+</head>
+<body oncopy="return false" onpaste="return false" oncut="return false">
+  <nav id="mainNav">
+    <ul>
+      <li><a href="home.html"><i class="material-icons md-36">home</i><p>Home</p></a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><i class="material-icons md-36">image</i><p>Projects</p></a>
+        <div class="dropdown-content">
+          <a href="pizzeriaProject.html">Pizzeria UX Re-Design</a>
+          <a href="ninjaFolioProject.html">Portfolio UX Design</a>
+          <a href="utProject.html">Usability Testing</a>
+          <a href="amazonProject.html">Amazon.com Casestudy</a>
+          <a href="elderCareProject.html">UX in Elder Care Support System</a>
+          <a href="dataAnalysisProject.html">UX Measurement in Online Banking</a>
+        </div>
+      </li>
+      <li><a href="aboutMe.html"><i class="material-icons md-36">person</i><p>About</p></a></li>
+      <li><a href="home.html#contact_division"><i class="material-icons md-36">mail</i><p>Contact</p></a></li>
+    </ul>
+  </nav>
+  <main>
+    <div id="MobPageTitle">
+      <img class="BGTitle4Mob" style="z-index:1;" src="resources/home/mobhomeHero.jpg" alt="Mobile Page Title BG">
+      <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+      <h3 class="PageTitle4Mob">About Me</h3>
+    </div>
+    <div id="modalMenuDiv" class="modalMenuBG" style="display:none;">
+      <nav id="mobNav">
+        <a href="home.html" onclick="hideMenu()">Home</a>
+        <a href="#projects_division" onclick="hideMenu()">
+          Projects
+          &nbsp;<i class="fa fa-caret-down" style="font-size:16px;color:white;"></i>
+        </a>
+        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Pizzeria Redesign</a>
+        <a href="ninjaFolioProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Portfolio Design</a>
+        <a href="utProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Usability Testing</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;UX Case Study</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;User & Task Analysis</a>
+        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;UX Measurement</a>
+        <a href="aboutMe.html" onclick="hideMenu()">About</a>
+        <a href="home.html#contact_division" onclick="hideMenu()">Contact</a>
+      </nav>
+    </div>
+
+    <div id="modalBox" class="modal">
+      <div>
+        <input type="button" class="close zoomButton" value="&times">
+      </div>
+      <div id="modalImageContainer">
+        <img id="modalImage" class="modal-content">
+      </div>
+      <div style="text-align:center;">
+        <input type="button" id="zoomin" class="zoomButton" value="+"/>
+        <input type="button" id="zoomout" class="zoomButton" value="-"/>
+      </div>
+    </div>
+
+    <header id="aboutMeHeader">
+      <!--<img src="resources/UTesting/bentleyHeroblur.jpg" alt="bentley university hero image">
+      <h1 class="pageTitle">About Me Lakshmy</h1>
+      <p></p>-->
+      <!--<div class="about_division" id="about_division">-->
+    </header>
+
+    <div class="aboutMeSubDiv">
+      <!--<h2>About</h2>-->
+      <div class="myPicture">
+        <img src="resources/aboutMe/myself.jpg" alt="My Picture">
+      </div>
+      <div id="credoSubDiv">
+        <h3>Hi there!</h3>
+        <p style="text-align:justify;">I am a passionate designer and developer and that's what I do the best.
+          My credo is to provide an experience design that humanizes technology.<br><br>
+          Demystifying problems with critical thinking and focused interaction that leads to impactful solutions excites me the most.
+          I take an analytical approach in simplifying the way people work together and interact with products and technologies to
+          build meaningful relationships. I believe this to be the pinnacle to organizational and individual development.</p>
+        </div>
+      </div>
+
+      <!--<div id="skillsSubDiv" style="width:100%">-->
+      <div id="skillsSubDiv">
+        <!--<h3>Skillsets</h3>-->
+        <div id="skillsImage">
+          <img src="resources/aboutMe/skills.jpg" alt="Skills Picture">
+          <!--<img src="resources/home/myName.png" alt="Skills Picture">-->
+        </div>
+        <div id="skillContent">
+          <!--<div id="uxdesign" style="height:100vh; overflow:auto;">-->
+          <div style="display:inline-block;padding:2rem;">
+            <h4 style="font-size:2rem; padding:2rem 0;"><i class="fa fa-pencil"></i>&nbsp;<u>UX Design</u></h4>
+            <div style="float:left; padding-right:4rem;">
+              <ul>
+                <br><br>
+                <li>User Research</li>
+                <li>Persona Creation</li>
+                <li>Wireframing</li>
+                <li>Low Fidelity Prototype</li>
+                <li>High Fidelity Prototype</li>
+                <li>Usability Testing</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+            <div style="float:left;">
+              <h4>Software Tools</h4>
+              <ul>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Balsamiq</li>
+                <li>Adobe XD</li>
+                <li>Sketch</li>
+                <li>Invision</li>
+                <li>Figma</li>
+                <li>Lucid Chart</li>
+              </ul>
+            </div>
+          </div>
+          <!--</div>-->
+          <div style="display:inline-block;padding:2rem;">
+            <h4 style="font-size:2rem; padding:2rem 0;"><i class="fa fa-code" style="font-size:18px;"></i>&nbsp;<u>Development</u></h4>
+            <div style="float:left; padding-right:4rem;">
+              <h4>Front-end Development</h4>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>SASS</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>BootStrap</li>
+              </ul>
+              <br><br>
+              <h4>Back-end Development</h4>
+              <ul>
+                <li>Core Java</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <div style="float:left;">
+              <h4>Development Enviornments</h4>
+              <ul>
+                <li>DreamWeaver</li>
+                <li>atom.io</li>
+                <li>Eclipse</li>
+                <li>IntelliJ</li>
+              </ul>
+            </div>
+          </div>
+          <div style="display:inline-block;padding:2rem;">
+            <h4 style="font-size:2rem; padding:2rem 0;"><i class="fa fa-wrench" style="font-size:18px;"></i>&nbsp;<u>Other Capabilities</u></h4>
+            <div style="float:left; padding-right:4rem;">
+              <h4>Development</h4>
+              <ul>
+                <li>Wordpress</li>
+                <li>CVS Versioning System</li>
+                <li>Git Version Control</li>
+                <li>Github Version Control</li>
+                <li>HP Quality Center</li>
+                <li>Chrome Developer Toolkit</li>
+                <li>Google Analytics</li>
+              </ul>
+            </div>
+            <div style="float:left;">
+              <h4>Operating System</h4>
+              <ul>
+                <li>Windows</li>
+                <li>macOS</li>
+                <li>Linux</li>
+                <li>Unix</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="skillsSubDiv4mobile">
+        <h3>Skillsets</h3>
+        <!--<div id="uxdesign" style="height:100vh; overflow:auto;">-->
+        <div class="skillsColumn">
+          <h4 style="font-size:1.5rem; padding:1.5rem 0;"><i class="fa fa-pencil"></i>&nbsp;<u>UX Design</u></h4>
+          <div>
+            <ul>
+              <br><br>
+              <li>User Research</li>
+              <li>Persona Creation</li>
+              <li>Wireframing</li>
+              <li>Low Fidelity Prototype</li>
+              <li>High Fidelity Prototype</li>
+              <li>Usability Testing</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="padding: 1em 0;padding: 1rem 0;">Software Tools</h4>
+            <ul>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>Balsamiq</li>
+              <li>Adobe XD</li>
+              <li>Sketch</li>
+              <li>Invision</li>
+              <li>Figma</li>
+              <li>Lucid Chart</li>
+            </ul>
+          </div>
+        </div>
+        <!--</div>-->
+        <div class="skillsColumn">
+          <h4 style="font-size:1.5rem; padding:1.5rem 0;"><i class="fa fa-code" style="font-size:18px;"></i>&nbsp;<u>Development</u></h4>
+          <div>
+            <h4 style="padding: 1em 0;padding: 1rem 0;">Front-end Development</h4>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>SASS</li>
+              <li>JavaScript</li>
+              <li>JQuery</li>
+              <li>BootStrap</li>
+            </ul>
+            <h4 style="padding: 1em 0;padding: 1rem 0;">Back-end Development</h4>
+            <ul>
+              <li>Core Java</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="padding: 1em 0;padding: 1rem 0;">Development Enviornments</h4>
+            <ul>
+              <li>DreamWeaver</li>
+              <li>atom.io</li>
+              <li>Eclipse</li>
+              <li>IntelliJ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skillsColumn">
+          <h4 style="font-size:1.5rem; padding:1.5rem 0;"><i class="fa fa-wrench" style="font-size:18px;"></i>&nbsp;<u>Other Capabilities</u></h4>
+          <div>
+            <h4 style="padding: 1em 0;padding: 1rem 0;">Development</h4>
+            <ul>
+              <li>Wordpress</li>
+              <li>CVS Versioning System</li>
+              <li>Git Version Control</li>
+              <li>Github Version Control</li>
+              <li>HP Quality Center</li>
+              <li>Chrome Developer Toolkit</li>
+              <li>Google Analytics</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="padding: 1em 0;padding: 1rem 0;">Operating System</h4>
+            <ul>
+              <li>Windows</li>
+              <li>macOS</li>
+              <li>Linux</li>
+              <li>Unix</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="academicSubDiv">
+        <!--<h3 style="clear:left;">Qualifications</h3>
+        <h4 style="font-size:2rem; padding:2rem 0;"><i class="fa fa-pencil"></i>&nbsp;<u>UX Design</u></h4>
+        <div style="float:left; padding-right:4rem;">-->
+        <div id="academicsImage">
+          <img src="resources/aboutMe/academics.png" alt="Academics Picture">
+        </div>
+        <div id="academicsContent">
+          <div style="display:inline-block;padding:2rem;">
+            <h4 style="font-size:2rem; padding:2rem 0;">Academics</h4>
+            <ul>
+              <li>User Experience Certificate Program, <b>Bentley University</b>, Waltham, Boston, USA (Ongoing)</li>
+              <li>UX Certificate Program, <b>American Graphic Institute</b>, Woburn, Boston, USA, April 2019</li>
+              <li>Bachelor of Technology, <b>Computer Science and Engineering</b>, Kerala University, Trivandrum, India, 2011</li>
+            </ul>
+          </div>
+          <div style="display:inline-block;padding:2rem;">
+            <h4 style="font-size:2rem; padding:2rem 0;">Certifications</h4>
+            <ul>
+              <li>'CSS Essentials' from LinkedIn Learning (Ongoing)</li>
+              <li>'JavaScript Essentials' from LinkedIn Learning (Ongoing)</li>
+              <li>'Front-End Web Development With HTML5, CSS, and JavaScript' from PluralSight (Ongoing)</li>
+              <li>‘Intro to the Design of Everyday Things’ from Udacity, December 2018 </li>
+              <li>‘User Experience Fundamentals’ from The Team W, August 2018</li>
+              <li>‘User Experience for the Web’ from Open2Study, August 2018</li>
+            </ul>
+            <ul>
+              <li>Retail Level 1 certification provided by GAMAcademy, USTGlobal, Trivandrum, India, 2014</li>
+              <li>ALPHA leadership certification on Java provided by GAMAcademy, USTGlobal, Trivandrum, India, 2012</li>
+            </ul>
+          </div>
+          <div style="display:inline-block;padding:2rem;">
+            <h4 style="font-size:2rem; padding:2rem 0;">Competencies</h4>
+            <ul>
+              <li>Project experience in user experience design life cycle - requirements gathering, user research, user and task analysis, information architecture, wire-framing, low/high fidelity prototyping, usability testing, rapid application design and development, deployment, quality control, user experience/engagement measurement and data analytics</li>
+              <li>Hands-on experience in front end responsive development and agile software life cycle processes</li>
+              <li>Excellent written and oral communication, people management, project management and team playing skills</li>
+              <li>Mentoring team members on technical and domain know-how</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="academicSubDiv4mobile">
+        <h3 style="clear:left;">Qualifications</h3>
+        <div class="academics">
+          <h4>Academics</h4>
+          <ul>
+            <li>User Experience Certificate Program, <b>Bentley University</b>, Waltham, Boston, USA (Ongoing)</li>
+            <li>UX Certificate Program, <b>American Graphic Institute</b>, Woburn, Boston, USA, April 2019</li>
+            <li>Bachelor of Technology, <b>Computer Science and Engineering</b>, Kerala University, Trivandrum, India, 2011</li>
+          </ul>
+          <h4>Certifications</h4>
+          <ul>
+            <li>'CSS Essentials' from LinkedIn Learning (Ongoing)</li>
+            <li>'JavaScript Essentials' from LinkedIn Learning (Ongoing)</li>
+            <li>'Front-End Web Development With HTML5, CSS, and JavaScript' from PluralSight (Ongoing)</li>
+            <li>‘Intro to the Design of Everyday Things’ from Udacity, December 2018 </li>
+            <li>‘User Experience Fundamentals’ from The Team W, August 2018</li>
+            <li>‘User Experience for the Web’ from Open2Study, August 2018</li>
+          </ul>
+          <ul>
+            <li>Retail Level 1 certification provided by GAMAcademy, USTGlobal, Trivandrum, India, 2014</li>
+            <li>ALPHA leadership certification on Java provided by GAMAcademy, USTGlobal, Trivandrum, India, 2012</li>
+          </ul>
+          <h4>Competencies</h4>
+          <ul>
+            <li>Project experience in user experience design life cycle - requirements gathering, user research, user and task analysis, information architecture, wire-framing, low/high fidelity prototyping, usability testing, rapid application design and development, deployment, quality control, user experience/engagement measurement and data analytics</li>
+            <li>Hands-on experience in front end responsive development and agile software life cycle processes</li>
+            <li>Excellent written and oral communication, people management, project management and team playing skills</li>
+            <li>Mentoring team members on technical and domain know-how</li>
+          </ul>
+        </div>
+      </div>
+
+
+  <div style="text-align:center;margin:3em 0;margin:3rem 0;">
+      <a href="#aboutMeHeader">
+      <i class="fa fa-long-arrow-up" style="color:#190654;padding:1em;padding:1rem;">&nbsp;&nbsp;Move To Top</i>
+    </a>
+  </div>
+
+  <footer>
+  <div class="bottom-bar" >
+  <p>&copy 2019 | All right reserved.</p>
+  <p>Hand coded and compiled by Lakshmy Jayalakshmy</p>
+  <!-- <p style="text-align:center;line-height:.5em;line-height:.5rem;">Please use Google Chrome or Mozilla Firefox for optimized views</p> -->
+  </div>
+</footer>
+</section>
+</div>
+</main>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/commonScript.js"></script>
+<script src="js/accordionScript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script>
+/*parallaxScript.js*/
+
+/*Parallax START*/
+function splitScroll1(){
+  const controller1 = new ScrollMagic.Controller();
+  new ScrollMagic.Scene({
+    duration: '200%',
+    triggerElement:'#skillsImage',
+    triggerHook: 0
+  })
+  .setPin('#skillsImage')
+  .addTo(controller1);
+}
+/*Accordion END*/
+splitScroll1();
+
+function splitScroll2(){
+  const controller2 = new ScrollMagic.Controller();
+  new ScrollMagic.Scene({
+    duration: '200%',
+    triggerElement:'#academicsImage',
+    triggerHook: 0
+  })
+  .setPin('#academicsImage')
+  .addTo(controller2);
+}
+splitScroll2();
+</script>
+</body>
+</html>

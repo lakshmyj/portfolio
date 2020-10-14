@@ -1,0 +1,471 @@
+/*site.css*/
+/*
+*, *::before, *::after{
+box-sizing: border-box;
+}*/
+
+/* selects all elements and tags in the html */
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+*:focus{
+  outline: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  padding: 0; /*To align the nav bar from left corner*/
+  margin: 0;  /*To align the nav bar from left corner*/
+  background: #E0F7FA;  /*Light blue background through out the page*/
+  color: #190654;  /*font color set to dark blue throughout the body*/
+  font-family: Cambria, "Times New Roman", serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  /*max-width: 960px;*/
+/*  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;       */
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover{
+  color: green;
+}
+img{
+  width: 100%;
+}
+/*aside{
+  position: fixed; /*To fix the nav bar even when scrolling*/
+  /*width:250px;
+  z-index: 1;
+  text-align: center;
+  top:0;
+  left:0;
+  overflow-x: hidden;
+  height:100%;
+  background-color: #E0F7FA;
+}
+aside a:hover{
+  background: #38C1D2;
+}*/
+.imageLogo{
+  height:200px;
+  width:75%;
+  margin:0 auto;
+}
+.imageLogo img{
+  width: 100%;
+  height: 85%;
+  margin-top: 10px;
+  object-fit: cover;
+}
+/*#mainNav{
+  float:left;
+  width:100px;
+}
+#mainNav a{
+  display: block;
+  padding: 15px 0;
+  color: #190654;
+  transition: all 0.35s;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  font-weight: bold;
+}*/
+
+#mainNav{
+  /*background-image: url(homeHero.jpg);
+  background-attachment: scroll;
+  right:10%;
+  position: fixed;
+  z-index: 1;
+  float: right;
+  margin: 0 10%;
+  margin-right: 10%; */
+  position: absolute;
+  /*left: 60%;*/
+  right:0;
+  z-index: 1;
+  margin-right: 5em;
+  margin-right: 5rem;
+}
+#mainNav a{
+  /*display: block;*/
+  display: inline-block;
+  padding: 20px;
+  color: #190654;
+  /* transition: all 0.35s; */
+  text-transform: uppercase;
+   font-size: 0.75em;
+  /*letter-spacing: 2px; */
+  font-weight: bold;
+  text-align: center;
+}
+
+#mainNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#mainNav li {
+  float: left;
+}
+
+#mainNav li a, .dropbtn {
+  display: inline-block;
+  text-align: center;
+  /*padding: 14px 16px;*/
+  text-decoration: none;
+}
+
+#mainNav li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E0F7FA;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  color: green;
+  text-shadow: 2px 2px 5px green;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #E0F7FA;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+/*.selectedNav{
+  background-color: #38C1D2;
+}
+/*#navDescription{
+  padding:25px 0 0 5px;
+  margin-left:101px;
+  border-radius:5px;
+  font-size:14px;
+  line-height:25px;
+  text-align:left;
+  /* width:250px; */
+  /* height:100%; */
+/*}*/
+#modalMenuDiv, #MobPageTitle, .BGTitle4Mob, .PageTitle4Mob{
+  display: none;
+  /* visibility:hidden; */
+}
+button{
+  background-color: #190654;  /*Dark blue BG for button*/
+  border: none;
+  color: white; /*font color white*/
+  border-radius: 12px;  /*curved border*/
+  padding: 10px 15px;
+  font-family: "Cambria";
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover{
+  color: #009688;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.bottom-bar{
+  /* background: #38c1d2; */
+  font-size: 1em;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #190654;
+  /* margin-top: 5em;
+  margin-top: 5rem; */
+  padding:1em;
+  padding:1rem;
+  /* line-height: 0; */
+  /* line-height: 0rem; */
+}
+.bottom-bar > p{
+  text-align: center;
+}
+/* .bottom-bar-mobile{
+  display: none;
+} */
+/* Create a new element after the content in .bottom-bar */
+/* Clearfix */
+.bottom-bar:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /* padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  /* align-items: center; */
+  margin: 0 auto;
+}
+
+#modalImageContainer {
+  overflow: auto;
+  /* background: red; */
+  width: 80vw;
+  height: 80vh;
+  margin: 1% auto;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  /* top:10%; */
+  /* width: 80%; */
+  /* max-width: 700px; */
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.5s;
+  animation-name: zoom;
+  animation-duration: 0.5s;
+  overflow: auto;
+  position: relative;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  /* position: absolute; */
+  /* top: 15px; */
+  /* right: 35px; */
+  /* color: #f1f1f1; */
+  margin: 1% 1% 0 0;
+  float:right;
+  color:white;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  background-color: #190654;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.zoomButton {
+  width: 100px;
+  height: 50px;
+  background: #190654;
+  color: white;
+  font-size: 2em;
+  border: none;
+}
+.zoomButton:hover{
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Accordion START*/
+.nestedList1{
+  line-height: 150%;
+  padding-left: 1em;
+  padding-left: 1rem;
+}
+.nestedList2{
+  padding-left: 2em;
+  padding-left: 2rem;
+}
+.nestedList3{
+  padding-left: 3em;
+  padding-left: 3rem;
+}
+.accordion {
+  cursor: pointer;
+  margin-top: 1em;
+  margin-top: 1rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: opacity 10s ease-out;
+  border-radius: 0;
+  background-color: #38C1D2;
+  color:#190654;
+  /* font-size: 15px; */
+  /* font-weight: 500; */
+}
+.accordion:after {
+  content: '+';
+  color: #190654;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "-";
+}
+.active, .accordion:hover{
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  /* color: #009688; */
+  /* transition: opacity 2s ease-out; */
+}
+.panel {
+  padding: 2em;
+  padding: 2rem;
+  display: none;
+  border: 1px solid #190654;
+  overflow: hidden;
+  /* width:80%; */
+}
+/*Accordion END*/
+
+.textToClick{
+  cursor:pointer;
+  font-size: 1.05em;
+  font-size: 1.05rem;
+  color:green;
+  font-style: italic;
+
+}
+.textToClick:hover, .clickToDisplay:hover{
+  color:green;
+}
+.clickToDisplay{
+  cursor:pointer;
+}
+@media screen and (max-width: 601px)  {
+  body{
+    max-width:100%;
+  }
+  .imageLogo, #navDescription, #mainNav, aside{
+    display: none;
+  }
+  /* The Modal (background) */
+  #modalMenuDiv {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  /* Modal Content */
+  #mobNav {
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: #190654;
+    height: 100%;
+    max-width: 70%;
+    /* overflow: scroll; */
+    padding: 2em;
+    /* background-color: #5cb85c; */
+    color: white;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+  }
+  #mobNav a{
+    text-decoration:none;
+    padding: 1em;
+    display: block;
+    color: white;
+    /* width:10em;
+    height:10em; */
+    /* margin: 25px 25px 25px 25px; */
+  }
+  #mobNav a:hover{
+    color:#009688;
+  }
+  #MobPageTitle{
+    position: absolute;
+    display: block;
+    max-height: 2em;
+    max-height: 2rem;
+    overflow: hidden;
+    top:0;
+  }
+  .PageTitle4Mob{
+    display: inline-block;
+    position: fixed;
+    z-index: 1;
+    left:3em;
+    left:3rem;
+    /*top:1em;
+    top:1rem;*/
+    font-size: 1.75em;
+    font-size: 1.75rem;
+    top:0;
+  }
+  .BGTitle4Mob{
+    position:fixed;
+    z-index:1;
+    width:100%;
+    display: block;
+  }
+  #hamburgerBtn{
+    display:block;
+    /* position:relative; */
+    position:fixed;
+    z-index: 1;
+    float:left;
+    font-size:2em;
+    font-size:2rem;
+    color:#190654;
+    background-color: #e0f7fa;
+    border: none;
+    padding: 0;
+    margin: .5em;
+    margin: .5rem;
+    /* visibility: visible; */
+    /* position: -webkit-sticky;
+    position: sticky; */
+    /* top:0; */
+    /* left:0; */
+  }
+
+}

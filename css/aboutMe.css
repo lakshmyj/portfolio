@@ -1,0 +1,193 @@
+/*site.css*/
+/*
+*, *::before, *::after{
+box-sizing: border-box;
+}*/
+
+/* selects all elements and tags in the html */
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+*:focus{
+  outline: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-image: url(homeHero5.jpg);
+  background-attachment: fixed;
+}
+h3{
+  margin:1em 0;
+  margin:1rem 0;
+}
+/*.aboutMeSubDiv, #academicSubDiv{*/
+.aboutMeSubDiv{
+  display: inline-block;
+  margin:0 8em 2em 8em;
+  margin:0 8rem 2rem 8rem;
+  /*float: left;*/
+}
+.aboutMeSubDiv{
+  margin-top: 6em;
+  margin-top: 6rem;
+  /*display: flex;
+  flex-direction: column;*/
+  height:100vh;
+}
+.myPicture{
+  width: 25%;
+  float: left;
+  padding: 1em;
+  padding: 1rem;
+}
+#credoSubDiv{
+  float: left;
+  width: 50%;
+  padding: 1em;
+  padding: 1rem;
+  padding-left: 5em;
+  padding-left: 5rem;
+  /*width: 60%;
+  padding-left: 4em;
+  padding-left: 4rem;*/
+}
+#credoSubDiv > p{
+  font-size: 1.25em;
+  font-size: 1.25rem;
+  line-height: 2em;
+  line-height: 2rem;
+}
+#skillsSubDiv, #academicSubDiv{
+  display:flex;
+  /*height:300vh;
+  background-color: #BEBECA;*/
+  background: linear-gradient(#BEBECA, #F7D6EC, #BEBECA);
+}
+#skillsImage, #academicsImage{
+  width:50%;
+  /*height:100vh;
+  justify-content:center;
+  align-items:center;
+  font-size:30px;*/
+  display:flex;!important
+  margin:0;
+}
+#skillContent, #academicsContent{
+  width:50%;
+  /*background-color: #FECD67;
+  background-color: #BEBECA;*/
+}
+#skillContent div, #academicsContent div{
+  /*height: 100vh;*/
+  display:flex;
+  flex-direction: column;
+  /*justiy-content:space-around;
+  align-items: center;*/
+}
+#skillContent li, #academicsContent li{
+  text-align: left;
+  padding: .5em .75em;
+  padding: .5rem .75rem;
+  list-style-position: inside;
+  font-size: 1.15em;
+  font-size: 1.15rem;
+  line-height: 2em;
+  line-height: 2rem;
+}
+#skillContent h4, #academicsContent h4{
+  padding: .25em;
+  padding: .25rem;
+  margin: .25em;
+  margin: .25rem;
+  color: black;
+  font-weight: bold;
+}
+#skillsSubDiv4mobile, #academicSubDiv4mobile{
+  display: none;
+}
+@media screen and (max-width: 601px)  {
+  body{
+    max-width:100%;
+    margin:0;
+    padding:0;
+    clear:both;
+  }
+  h3{
+    font-size: 2em;
+    font-size: 2rem;
+  }
+  .aboutMeSubDiv, #academicSubDiv4mobile{
+    display: inline-block;
+    margin:0 2em;
+    margin:0 2rem;
+    padding: 0 1.15em;
+    padding: 0 1.15rem;
+    /*float: left;
+    padding: 2em;
+    padding: 2rem;*/
+  }
+  /*#aboutMeHeader{
+    margin-top: 2em;
+    margin-top: 2rem;
+  }*/
+  .myPicture, #academicSubDiv{
+    display: none;
+  }
+  .aboutMeSubDiv{
+    height: auto;
+  }
+  #credoSubDiv{
+    margin:4em 0 2em 0;
+    margin:4rem 0 2rem 0;
+    padding:0;
+    width: auto;
+    /*overflow: auto;!important*/
+  }
+  #credoSubDiv > p{
+    font-size: 1.15em;
+    font-size: 1.15rem;
+  }
+  #skillsSubDiv4mobile{
+    display: block;
+    margin: 1em;
+    margin: 1rem;
+    overflow: hidden;
+  }
+  #skillsSubDiv4mobile li{
+    font-size: 1.15em;
+    font-size: 1.15rem;
+    line-height: 2em;
+    line-height: 2rem;
+  }
+  .skillsColumn{
+    display:inline-block;
+    margin:1em 0;
+    margin:1rem 0;
+    padding: 0 4em 2em 4em;
+    padding: 0 4rem 2rem 4rem;
+    background-color: #BEBECA;
+    width: 100%;
+  }
+  #skillsSubDiv{
+    display: none;
+  }
+  #skillContent4mobile{
+    width:100%;
+  }
+  .academics{
+    font-size: 1.15em;
+    font-size: 1.15rem;
+    line-height: 2em;
+    line-height: 2rem;
+  }
+  .academics h4{
+    font-size: 1.5em;
+    font-size: 1.5rem;
+    padding: 1em 0;
+    padding: 1rem 0;
+  }
+}
