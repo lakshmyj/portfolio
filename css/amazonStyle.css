@@ -2,6 +2,7 @@
 /* header img{
   -webkit-filter: opacity(10%) blur(3px);
 } */
+
 .majorContents img{
   width: 25%;
   margin: 2em auto;
@@ -49,6 +50,10 @@ transform: scale(1.03);
     margin: .5em;
     margin: .5rem;
   } */
+  h1, h3, h4{
+    margin: 1em auto;
+    margin: 1rem auto;
+  }
   header{
     position:relative;
     margin: 0;
