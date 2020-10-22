@@ -45,7 +45,8 @@ h3{
 .wireframeRowsMob, .prototypeRowsMob{
   display: none;
 }
-@media (max-width: 601px) {
+/*@media (max-width: 601px) {*/
+@media (max-width: 768px) {
   main{
     margin:0;
     width:100%;

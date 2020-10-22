@@ -61,7 +61,8 @@ h4{
 }
 /*Image slider END*/
 
-@media (max-width: 601px) {
+/*@media (max-width: 601px) {*/
+@media (max-width: 768px) {
   main{
     margin:0;
     width:100%;

@@ -90,11 +90,12 @@ aside a:hover{
   margin: 0 10%;
   margin-right: 10%; */
   position: absolute;
-  /*left: 60%;*/
+  /*left: 60%;
+  margin-right: 5em;
+  margin-right: 5rem;*/
   right:0;
   z-index: 1;
-  margin-right: 5em;
-  margin-right: 5rem;
+  margin-right: 5vw;
 }
 #mainNav a{
   /*display: block;*/
@@ -368,7 +369,8 @@ button:hover{
 .clickToDisplay{
   cursor:pointer;
 }
-@media screen and (max-width: 601px)  {
+/*@media screen and (max-width: 601px)  {*/
+@media screen and (max-width: 768px)  {
   body{
     max-width:100%;
   }
@@ -424,9 +426,7 @@ button:hover{
   #MobPageTitle{
     position: absolute;
     display: block;
-    max-height: 2em;
-    max-height: 2rem;
-    overflow: hidden;
+    max-height: 2vw;
     top:0;
   }
   .PageTitle4Mob{
@@ -435,16 +435,20 @@ button:hover{
     z-index: 1;
     left:3em;
     left:3rem;
+    font-size:5vw;
     /*top:1em;
-    top:1rem;*/
+    top:1rem;
     font-size: 1.75em;
     font-size: 1.75rem;
+    font-size: 3vw;*/
     top:0;
   }
   .BGTitle4Mob{
     position:fixed;
     z-index:1;
-    width:100%;
+    /*width:100%;*/
+    height:12vw;
+    overflow: hidden;
     display: block;
   }
   #hamburgerBtn{

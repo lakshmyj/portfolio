@@ -32,7 +32,8 @@
   line-height: 2em;
   line-height: 2rem;
 }
-@media (max-width: 601px) {
+/*@media (max-width: 601px) {*/
+@media (max-width: 768px) {
   main{
     margin:0;
     width:100%;
