@@ -21,8 +21,10 @@ body{
   background-attachment: fixed;
 }
 h3{
-  margin:1em 0;
-  margin:1rem 0;
+  /*margin:1em 0;
+  margin:1rem 0;*/
+  margin-bottom:1em;
+  margin-bottom:1rem;
 }
 /*.aboutMeSubDiv, #academicSubDiv{*/
 .aboutMeSubDiv{
@@ -57,10 +59,11 @@ h3{
   padding-left: 4rem;*/
 }
 #credoSubDiv > p{
-  font-size: 1.25em;
-  font-size: 1.5vw;
-  /*line-height: 2em;*/
-  line-height: 2;
+  font-size: 1.25vw;
+  line-height: 1.75;
+  /*font-size: 1.25em;
+    font-size: 1.25rem;
+    line-height: 2em;*/
 }
 #skillsSubDiv, #academicSubDiv{
   display:flex;
