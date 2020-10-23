@@ -351,6 +351,7 @@ button:hover{
   display: none;
   border: 1px solid #190654;
   overflow: hidden;
+  transition: 0 0.2s ease-out;
   /* width:80%; */
 }
 /*Accordion END*/
