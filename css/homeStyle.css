@@ -126,6 +126,9 @@ h2{
  font-size: 2em;
  font-size: 2rem;
 }
+#contact_division h2, #projects_division h2{
+  text-transform: uppercase;
+}
  .projects_division{
    margin-top:2em;
    margin-top:2rem;
