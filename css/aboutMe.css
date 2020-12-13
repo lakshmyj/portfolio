@@ -137,8 +137,8 @@ h3{
     display: inline-block;
     /*margin:0 2em;
     margin:0 2rem;*/
-    margin:0;
-    padding: 0 1.15em;
+    /*margin:0;
+    /*padding: 0 1.15em;
     padding: 0 1.15rem;
     /*float: left;
     padding: 2em;
@@ -147,17 +147,27 @@ h3{
   /*#aboutMeHeader{
     margin-top: 2em;
     margin-top: 2rem;
-  }*/
-  .myPicture, #academicSubDiv{
+  }
+  .myPicture, #academicSubDiv{*/
+  .myPicture{
+    width:100%;
+    padding:0;
+  }
+  .myPicture,#credoSubDiv,#skillsSubDiv4mobile,#academicSubDiv4mobile{
+    width:auto;
+    margin:1em;
+    margin:1rem;
+  }
+  #academicSubDiv{
     display: none;
   }
   .aboutMeSubDiv{
     height: auto;
   }
   #credoSubDiv{
-    margin:4em 0 2em 0;
-    margin:4rem 0 2rem 0;
     padding:0;
+    /*margin:4em 0 2em 0;
+    margin:4rem 0 2rem 0;
     width: auto;
     /*overflow: auto;!important*/
   }
@@ -167,9 +177,9 @@ h3{
   }
   #skillsSubDiv4mobile{
     display: block;
-    margin: 1em;
-    margin: 1rem;
     overflow: hidden;
+    /*margin: 1em 0;
+    margin: 1rem 0;*/
   }
   #skillsSubDiv4mobile li{
     font-size: 1.15em;
