@@ -50,6 +50,35 @@ header p{
   margin: 2rem auto;
   max-width: 960px;
 }
+.overview{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 24px 20px 40px;
+  font-size: 1.15em;
+  font-size: 1.15rem;
+  line-height: 2.25em;
+  line-height: 2.25rem;
+  margin: 2em auto;
+  margin: 2rem auto;
+  max-width: 960px;
+}
+.row{
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid #B6C2C4;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  align-items: stretch;
+}
+.attribute{
+    width: 25%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    font-weight: 700;
+}
 .majorContents{
   max-width: 960px;
   /*max-width: 710px;*/
@@ -59,9 +88,13 @@ header p{
   margin-bottom: 0;
   margin-right: 18em;
   margin-right: 18rem;*/
+  margin: 0 auto;
 }
 .majorContents h2{
   font-size: 1.25em;
+  font-size: 1.25rem;
+  /*font-size: 3em;
+  font-size: 3rem;*/
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 1em 0;
@@ -69,16 +102,16 @@ header p{
 .majorContents p{
   font-size: 1.05em;
   font-size: 1.05rem;
-  line-height: 2em;
-  line-height: 2rem;
+  line-height: 2.25em;
+  line-height: 2.25rem;
   margin: 1em 0;
   text-align: justify;
 }
 .nestedList1, .nestedList2, .nestedList3{
   font-size: 1.05em;
   font-size: 1.05rem;
-  line-height: 2em;
-  line-height: 2rem;
+  line-height: 2.25em;
+  line-height: 2.25rem;
 }
 
 .majorContents iframe{
@@ -126,6 +159,14 @@ header p{
   .projectIndex{
     display: none;
   }
+  .row{
+    -webkit-flex-wrap: wrap; */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .attribute{
+    width: 100%;
+  }
   /*.majorContents{
       width:70%;
   }*/
@@ -137,6 +178,7 @@ header p{
   .majorContents iframe{
     width:100%;
   }
+
  .pageTitle{
       /* display: none; */
       visibility: hidden;

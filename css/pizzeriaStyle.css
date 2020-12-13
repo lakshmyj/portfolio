@@ -1,4 +1,7 @@
 /*pizzeriaStyle.css*/
+body{
+  /*background: linear-gradient(#F7D6EC, #E0F7FA, #F7D6EC);*/
+}
 h3{
   padding: 1em 0;
   padding: 1rem 0;
@@ -7,12 +10,13 @@ header img{
   /* -webkit-filter: opacity(25%) blur(1px); */
   width:100%;
 }
- .majorContents{
+
+ /*.majorContents{
      /* max-width: 70%;
      margin-right: 18em;
      margin-right: 18rem; */
-     margin: 0 auto;
-}
+  /*   margin: 0 auto;
+}*/
 
 .processImage_responsive{
   display: none;
@@ -41,6 +45,7 @@ header img{
 .paperPrototypeRows img{
   height:50%;
   max-width:30%;
+  border-radius: 10px;
 }
 
 .researchImgRows img:hover,
@@ -76,7 +81,7 @@ header img{
   /* width:100%; */
 }
 .senarioSection{
-  margin: 0 2.5%;
+  /*margin: 0 2.5%;*/
   line-height: 2em;
 }
 .wireframeImgRows{
@@ -139,6 +144,7 @@ header img{
     margin: 2em;
     margin: 2rem;
   }
+
   .majorContents{
     position:static;
     margin: 2em;
