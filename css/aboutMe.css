@@ -163,6 +163,7 @@ h3{
   }
   .aboutMeSubDiv{
     height: auto;
+    margin: 0;  
   }
   #credoSubDiv{
     padding:0;
