@@ -18,13 +18,14 @@
   <link rel="shortcut icon" href="resources/MyLogo_small.jpg">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link rel="stylesheet" href="css/site.css?v=1.1">
   <link rel="stylesheet" href="css/projectsCommon.css?v=1.1">
   <link rel="stylesheet" href="css/utStyle.css?v=1.1">
 </head>
 <body oncopy="return false" onpaste="return false" oncut="return false">
 
-  <nav id="mainNav">
+  <nav id="mainNav" data-aos="fade-down">
     <ul>
     <li><a href="home.html"><i class="material-icons md-36">home</i><p>Home</p></a></li>
     <li class="dropdown">
@@ -33,9 +34,9 @@
       <a href="pizzeriaProject.html">Pizzeria UX Re-Design</a>
       <a href="ninjaFolioProject.html">Portfolio UX Design</a>
       <a href="utProject.html">Usability Testing</a>
-      <a href="amazonProject.html">Amazon.com Casestudy</a>
-      <a href="elderCareProject.html">UX in Elder Care Support System</a>
       <a href="dataAnalysisProject.html">UX Measurement in Online Banking</a>
+      <a href="elderCareProject.html">UX in Elder Care Support System</a>
+      <a href="amazonProject.html">Amazon.com Casestudy</a>
     </div>
     </li>
     <li><a href="aboutMe.html"><i class="material-icons md-36">person</i><p>About</p></a></li>
@@ -60,9 +61,9 @@
         <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Pizzeria Redesign</a>
         <a href="ninjaFolioProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Portfolio Design</a>
         <a href="utProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Usability Testing</a>
-        <a href="amazonProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;UX Case Study</a>
-        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;User & Task Analysis</a>
         <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Measuring UX</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;User & Task Analysis</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;UX Case Study</a>
         <a href="aboutMe.html" onclick="hideMenu()">About</a>
         <a href="home.html#contact_division" onclick="hideMenu()">Contact</a>
       </nav>
@@ -83,10 +84,35 @@
 
   <header id="utHeader">
     <img src="resources/UTesting/bentleyHero.jpg" alt="bentley university hero image">
-    <h1 class="pageTitle">Usability Testing on Bentley.edu</h1>
-    <p>Identifying user research proposal and conducting a usability test on the Bentley University's official website creating test report</p>
+    <h1 data-aos="fade-right" class="pageTitle">Usability Testing on Bentley.edu</h1>
+    <p data-aos="fade-right">Identifying user research proposal and conducting a usability test on the Bentley University's official website creating test report</p>
   </header>
   <div class="detailsContainer">
+  </div>
+
+  <div class="overview" data-aos="fade-right">
+    <div class="row">
+      <div class="attribute">Client</div>
+      <div>Project at Bentley University</div>
+    </div>
+    <div class="row">
+      <div class="attribute">Sector</div>
+      <div>Learning and Education</div>
+    </div>
+    <div class="row">
+      <div class="attribute">My Role</div>
+      <div>User Experience Tester</div>
+    </div>
+    <div class="row">
+      <div class="attribute">Team Members</div>
+      <div>4</div>
+    </div>
+    <div class="row">
+      <div class="attribute">Project Duration</div>
+      <div>5 weeks</div>
+    </div>
+  </div>
+
   <section class="majorContents">
     <p>This is the case of performing usability testing on the internationally recognized leading business school's official website <u><a href="https://www.bentley.edu/" target="_blank">https://www.bentley.edu/</a></u> The usability testing case is presented below:</p>
     <section id="researchProposal">
@@ -478,5 +504,7 @@
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="js/commonScript.js"></script>
 <script src="js/accordionScript.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init({duration: 1200,})</script>
 </body>
 </html>

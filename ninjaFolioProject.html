@@ -18,6 +18,7 @@
   <link rel="shortcut icon" href="resources/MyLogo_small.jpg">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link rel="stylesheet" href="css/site.css?v=1.1">
   <link rel="stylesheet" href="css/projectsCommon.css?v=1.1">
   <link rel="stylesheet" href="css/ninjaFolioStyle.css?v=1.1">
@@ -44,7 +45,7 @@
       <span><a href="dataAnalysisProject.html">•	Online Banking</a></span><br>
     </i></p>
   </aside>-->
-  <nav id="mainNav">
+  <nav id="mainNav" data-aos="fade-down">
     <ul>
     <li><a href="home.html"><i class="material-icons md-36">home</i><p>Home</p></a></li>
     <li class="dropdown">
@@ -53,9 +54,9 @@
       <a href="pizzeriaProject.html">Pizzeria UX Re-Design</a>
       <a href="ninjaFolioProject.html">Portfolio UX Design</a>
       <a href="utProject.html">Usability Testing</a>
-      <a href="amazonProject.html">Amazon.com Casestudy</a>
-      <a href="elderCareProject.html">UX in Elder Care Support System</a>
       <a href="dataAnalysisProject.html">UX Measurement in Online Banking</a>
+      <a href="elderCareProject.html">UX in Elder Care Support System</a>
+      <a href="amazonProject.html">Amazon.com Casestudy</a>
     </div>
     </li>
     <li><a href="aboutMe.html"><i class="material-icons md-36">person</i><p>About</p></a></li>
@@ -80,9 +81,9 @@
         <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Pizzeria Redesign</a>
         <a href="ninjaFolioProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Portfolio Design</a>
         <a href="utProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Usability Testing</a>
-        <a href="amazonProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;UX Case Study</a>
-        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;User & Task Analysis</a>
         <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Measuring UX</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;User & Task Analysis</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;UX Case Study</a>
         <a href="aboutMe.html">About</a>
         <a href="home.html#contact_division" onclick="hideMenu()">Contact</a>
       </nav>
@@ -104,8 +105,8 @@
 
     <header id="ninjaFolioHeader">
       <img src="resources/ninjaFolio/codeHero.jpg" alt="code hero image">
-      <h1 class="pageTitle">Portfolio - UI/UX Design & Development</h1>
-      <p>End-to-end user experience design, interface design, front-end development, testing and deployment of this responsive online portfolio </p>
+      <h1 data-aos="fade-right" class="pageTitle">Responsive Portfolio - UI/UX Design & Development</h1>
+      <p data-aos="fade-right">End-to-end user experience design, interface design, front-end development, testing and deployment of this responsive online portfolio </p>
     </header>
     <div class="detailsContainer">
       <!--<section class="projectIndex">
@@ -118,8 +119,21 @@
         <p><a href="#ia">Information Architecture</a></p>
         <p><a href="#wireframes">Low Fidelity Wireframes</a></p>
         <p><a href="#prototypes">High Fidelity Prototype</a></p>
-        <p><a href="#build">Build and Deployment</a></p>
-      </section>-->
+        <p><a href="#build">Build and Deployment</a></p>-->
+      </div>
+      <div class="overview" data-aos="fade-right">
+        <div class="row">
+          <div class="attribute">My Role</div>
+          <div>Full Stack UX Designer to UI Developer
+            <br>Entire UX design processes from research to conception, visualization and prototyping
+            to UI development from coding to testing, deployment to version control and maintanance</div>
+        </div>
+        <div class="row">
+          <div class="attribute">Project Duration</div>
+          <div>10 weeks</div>
+        </div>
+      </div>
+
       <section class="majorContents">
         <p>This website is an online repository of all the projects I have completed in UX / UI domains. Being a developer myself, I disliked the limitations in the instant web development platforms. So I decided to design and develop from scratch using client side scripting languages to be cross-browser compatible and responsive. </p>
         <h3 id="tech">Tools and Technologies</h3><br>
@@ -232,6 +246,8 @@
   </main>
   <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="js/commonScript.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({duration: 1200,})</script>
   <script>
   /*Image slideshow START - 1st slider*/
   var slideIndex = 1;
