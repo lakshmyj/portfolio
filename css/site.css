@@ -15,7 +15,7 @@ box-sizing: border-box;
 }
 html{
   scroll-behavior: smooth;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 body{
   padding: 0; /*To align the nav bar from left corner*/
