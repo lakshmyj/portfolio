@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics START-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141255160-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-141255160-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics END-->
+
+  <meta charset="utf-8">
+  <title>MobileApp Project Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="shortcut icon" href="resources/MyLogo_small.jpg">-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="css/site.css?v=1.1">
+  <link rel="stylesheet" href="css/projectsCommon.css?v=1.1">
+  <link rel="stylesheet" href="css/ffdMobileStyle.css">
+</head>
+<body oncopy="return false" onpaste="return false" oncut="return false">
+  <nav id="mainNav" data-aos="fade-down">
+    <ul>
+    <li><a href="home.html"><i class="material-icons md-36">home</i><p>Home</p></a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn"><i class="material-icons md-36">image</i><p>Projects</p></a>
+    <div class="dropdown-content">
+      <a href="pizzeriaProject.html">Pizzeria UX Re-Design</a>
+      <a href="ninjaFolioProject.html">Portfolio UX Design</a>
+      <a href="utProject.html">Usability Testing</a>
+      <a href="dataAnalysisProject.html">UX Measurement in Online Banking</a>
+      <a href="ffdMobileProject.html">Mobile App UX Design</a>
+      <a href="elderCareProject.html">UX in Elder Care Support System</a>
+      <a href="amazonProject.html">Amazon.com Casestudy</a>
+    </div>
+    </li>
+    <li><a href="aboutMe.html"><i class="material-icons md-36">person</i><p>About</p></a></li>
+    <li><a href="home.html#contact_division#contact_division"><i class="material-icons md-36">mail</i><p>Contact</p></a></li>
+  </ul>
+  </nav>
+
+  <main>
+
+    <div id="MobPageTitle">
+      <img class="BGTitle4Mob" src="resources/ffdMobile/ffdMobHero.jpg" alt="Mobile Page Title BG">
+      <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+      <h3 class="PageTitle4Mob">Medical App Re-Design</h3>
+    </div>
+    <div id="modalMenuDiv" class="modalMenuBG">
+      <nav id="mobNav">
+        <a href="home.html" onclick="hideMenu()">Home</a>
+        <a href="home.html#projects_division">
+          Projects
+          &nbsp;<i class="fa fa-caret-down" style="font-size:16px;color:white;"></i>
+        </a>
+        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Pizzeria Redesign</a>
+        <a href="ninjaFolioProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Portfolio Design</a>
+        <a href="utProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Usability Testing</a>
+        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Measuring UX</a>
+        <a href="ffdMobileProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Mobile App Re-Design</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;User & Task Analysis</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;UX Case Study</a>
+        <a href="aboutMe.html">About</a>
+        <a href="home.html#contact_division" onclick="hideMenu()">Contact</a>
+      </nav>
+    </div>
+
+    <div id="modalBox" class="modal">
+      <div>
+        <input type="button" class="close zoomButton" value="&times">
+      </div>
+      <div id="modalImageContainer">
+        <img id="modalImage" class="modal-content">
+      </div>
+      <div style="text-align:center;">
+        <!-- <input type="button" class="close button" value="&times"> -->
+        <input type="button" id="zoomin" class="zoomButton" value="+"/>
+        <input type="button" id="zoomout" class="zoomButton" value="-"/>
+      </div>
+    </div>
+
+    <header id="ffdMobileHeader">
+      <img src="resources/ffdMobile/ffdHero.jpg" alt="hero image">
+      <h1 data-aos="fade-right" class="pageTitle">Mobile App - User research & UX Design</h1>
+      <p data-aos="fade-right">Performing user review and observation to uncover painpoints and provide design solution</p>
+    </header>
+      <div class="overview" data-aos="fade-right">
+        <div class="row">
+          <div class="attribute">Client</div>
+          <div>Project at Bentley University</div>
+        </div>
+        <div class="row">
+          <div class="attribute">Sector</div>
+          <div>Health Care</div>
+        </div>
+        <div class="row">
+          <div class="attribute">My Role</div>
+          <div>User Research</div>
+        </div>
+        <div class="row">
+          <div class="attribute">Team Members</div>
+          <div>2</div>
+        </div>
+        <div class="row">
+          <div class="attribute">Project Duration</div>
+          <div>1 week</div>
+        </div>
+      </div>
+
+      <section class="majorContents">
+        <h3 id="background">Background</h3>
+        <p>This is a freelance pitch for "Freedom From Diabetes" clinic. Their present app available
+          <a link="https://play.google.com/store/apps/details?id=com.ffd&hl=en_IN&gl=US" target="_blank" style="text-decoration:underline;">here</a>
+           is currently intended only for members who have registered for their programs. This scope could be extended by exntending this for other people who wants to monitor their blood sugar level on a daily basis and also to people who are currently not registerd members but are potential customers. This way they can reach a wide range of potential population that creates a win-win situation for both the business as well as the users.</p>
+        <h3 id="research">Research and Analysis</h3>
+        <p>I started out by observing a user while using the application. Following is an overview of the observation notes:</p>
+        <img style="width:100%" src="resources/ffdMobile/userObservation2.jpg" alt="user observation notes">
+          <p>I was able to interview a couple of other potential users who are diagonised with diabetes and are trying to self-manage their sugar levels by testing it themselves with a glucometer.
+        These are the few comments I received from them that they would like to see in a self-managing app for diabetes.</p>
+        <ul class="nestedList2">
+          <li>"I would like to see a dashboard that displays a graph related to my level of blood sugar that needs to be filtered based on daily/weekly/monthly basis"</li>
+          <li>"Diet and Exercise are major in controlling diabetes and hence it will be helpful to input frequencies and accomplishment status for both of those on a daily basis"</li>
+          <li>"Being diabetic and slightly on the higher side of the BMI, weight management and monitoring assist is what I want to monitor and keep track. A weight target and a progress towards it is what I am looking for in this app"</li>
+        </ul>
+        <p>I discussed with a diabetologist as well to see what the basic details are that a diabetic patient have to monitor and keep track of. His response was a summary of the above comments from the potential users of the app as well.</p>
+        <h3 id="tasks">Task Analysis</h3>
+        <p>Based on these user research, the pain points are uncovered which are then converted into goals/action items:</p>
+        <img src="resources/ffdMobile/painpoints2goal.jpg" alt="pain point to goal map">
+        <p>The primary tasks are listed out from the goals and the features for this iteration are then consolidated and prioritized:</p>
+        <ol class="nestedList2" style="list-style-type: decimal;">
+          <li>Ensure no data loss by provide mandatory save button ot auto-save if the user forgets to save and navigates</li>
+          <li>Provide meal types for the user to choose from to indicate which they ate and which they skipped</li>
+          <li>Include time stamp whenever vitals are entered</li>
+          <li>Report daily summaries on sugar levels, weight and meal frequenies for easy identification of patterns</li>
+          <li>Allow user to indicate activity/exercise status</li>
+        </ol>
+        <p>Considering the features present in the current app, based on the user observation and comments, various possibles designs have been tried out and finally narrowed down.</p>
+        <h3>Feature List & Interface Design</h3>
+        <p>Features for the tasks are then listed out and the appropriate interfaces are thought of.</p>
+        <ol class="nestedList2" style="list-style-type: decimal;">
+          <li>Task1: Ensure no data loss by provide mandatory save button ot auto-save if the user forgets to save and navigates<br>Feature: Add a save button in the add vitals page and all other navigations must be controlled by auto-save option</li>
+          <li>Task2: Provide meal types for the user to choose from to indicate which they ate and which they skipped<br>Interface: Include buttons with a small picture and meal type specified underneath for user selection. Provide options to add additional meal options</li>
+          <li>Task3: Include time stamp whenever vitals are entered<br>Feature: Auto-populate time stamp whenever readings are entered by the user</li>
+          <li>Task4: Report daily summaries as graphs on sugar levels, weight and meal frequenies for easy identification of patterns<br>Feature: Sort option and filter optio to choose what to display for easy comparison. Both numerical and graphical visualisations have to be provided</li>
+          <li>Task5: Allow user to indicate activity/exercise status<br>Feature: Include radio button option to choose completion status or skip status for activity/exercise</li>
+        </ol>
+        <h3>Design Rough Sketches</h3>
+        <p>The interface design is then implemented into the design. Rough design sketches are then sketched that covers easy accomplishment of all the tasks.</p>
+        <div class="roughPrototypeRows">
+          <img class="openOnClick" src="resources/ffdMobile/1.jpg" alt="design rationale">
+          <img class="openOnClick" src="resources/ffdMobile/2.jpg" alt="design rationale">
+          <img class="openOnClick" src="resources/ffdMobile/3.jpg" alt="design rationale">
+          <img class="openOnClick" src="resources/ffdMobile/4.jpg" alt="design rationale">
+          <img class="openOnClick" src="resources/ffdMobile/5.jpg" alt="design rationale">
+          <img class="openOnClick" src="resources/ffdMobile/6.jpg" alt="design rationale">
+        </div>
+        <div class="imageSlider" style="height:auto;min-height:13em;min-height:13rem;">
+          <button class="sliderButton" onclick="plusDivs1(-1)">&#10094;</button>
+          <img class="mySlides1 openOnClick" src="resources/ffdMobile/1.jpg" alt="design rationale">
+          <img class="mySlides1 openOnClick" src="resources/ffdMobile/2.jpg" alt="design rationale">
+          <img class="mySlides1 openOnClick" src="resources/ffdMobile/3.jpg" alt="design rationale">
+          <img class="mySlides1 openOnClick" src="resources/ffdMobile/4.jpg" alt="design rationale">
+          <img class="mySlides1 openOnClick" src="resources/ffdMobile/5.jpg" alt="design rationale">
+          <img class="mySlides1 openOnClick" src="resources/ffdMobile/6.jpg" alt="design rationale">
+          <button class="sliderButton" onclick="plusDivs1(1)">&#10095;</button>
+        </div>
+        <p>These rough screen sketches are then made into paper prototypes which are then user tested to ensure all the pain points are addressed. These are then mapped into high fidelity prototypes with all the visualizations that are again tested and handed over for development.</p>
+        <div style="text-align:center;margin:3em 0;margin:3rem 0;">
+          <a href="#ffdMobileHeader">
+            <i class="fa fa-long-arrow-up" style="color:#190654;padding:1em;padding:1rem;">&nbsp;&nbsp;Move To Top</i>
+          </a>
+        </div>
+        <footer>
+          <div class="bottom-bar" >
+            <p>&copy; 2020 | All right reserved.</p>
+            <p>Hand coded and compiled by Lakshmy Jayalakshmy</p>
+            <!-- <p style="text-align:center;line-height:.rem;line-height:.5rem;">Please use Google Chrome or Mozilla Firefox for optimized views</p> -->
+          </div>
+        </footer>
+      </section>
+    </div>
+  </main>
+  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/commonScript.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({duration: 1200,})</script>
+  <script>
+  /*Image slideshow START - 2nd slider*/
+  var slideIndex1 = 1;
+  showDivs1(slideIndex1);
+
+  function plusDivs1(n1) {
+    showDivs1(slideIndex1 += n1);
+  }
+
+  function showDivs1(n1) {
+    var i1;
+    var x1 = document.getElementsByClassName("mySlides1");
+    if (n1 > x1.length) {slideIndex1 = 1}
+    if (n1 < 1) {slideIndex1 = x1.length}
+    for (i1 = 0; i1 < x1.length; i1++) {
+      x1[i1].style.display = "none";
+    }
+    x1[slideIndex1-1].style.display = "block";
+  }
+  /*Image slideshow END - 2nd slider*/
+
+  </script>
+</body>
+</html>
