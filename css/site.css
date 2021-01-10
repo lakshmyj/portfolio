@@ -443,6 +443,9 @@ button:hover{
     left:3em;
     left:3rem;
     font-size:5vw;
+    padding:0;
+    margin:.5em;
+    margin:.5rem;
     /*top:1em;
     top:1rem;
     font-size: 1.75em;
@@ -454,7 +457,7 @@ button:hover{
     position:fixed;
     z-index:1;
     /*width:100%;*/
-    height:12vw;
+    height:10vw;
     overflow: hidden;
     display: block;
   }
@@ -464,8 +467,9 @@ button:hover{
     position:fixed;
     z-index: 1;
     float:left;
-    font-size:2em;
-    font-size:2rem;
+    /*font-size:2em;
+    font-size:2rem;*/
+    font-size:5vw;
     color:#190654;
     background-color: #e0f7fa;
     border: none;
